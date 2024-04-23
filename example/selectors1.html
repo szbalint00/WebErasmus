@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic selectors 1</title>
+    <style>
+        *{
+            margin: 0;
+            background: grey;
+        }
+        div{
+            background: rgb(80, 25, 25);
+        }
+        .title{
+            color: peru;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #title2{
+            color:rgb(11, 110, 11);
+        }
+        a[href="https://www.atigra.es"]{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        This is a title with class
+    </div>
+    <div id="title2">
+        This is a title with id
+    </div>
+    <a href="https://www.atigra.es">Atriga Makers</a>
+    <h2 id="otroID" class="title">H2 title</h2>
+</body>
+</html>
