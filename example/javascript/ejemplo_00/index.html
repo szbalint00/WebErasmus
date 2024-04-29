@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Jugador 1: Luna</p>
+    <script>
+        const para = document.querySelector("p");
+        para.addEventListener("click",updateName);
+        function updateName(){
+            let name = prompt("Escribe tu nombre");
+            para.textContent = "Jugador 1: " + name;
+        }
+    </script>
+</body>
+</html>
