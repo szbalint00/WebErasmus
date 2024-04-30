@@ -31,6 +31,8 @@ for(let i=0;i<styles.length;i++){
     styles[i].disabled=true;
 }
 
+styles[4].disabled=false;
+
 vegeLap.style.display="none";
 restartLap.style.display = "none";
 mainLap.style.display="none";

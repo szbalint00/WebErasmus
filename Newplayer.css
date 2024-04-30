@@ -1,64 +1,57 @@
+*{
+    margin:0;
+}
 
 body{
-    text-align: center;
-    color: white;
-    font-size: 5rem;
-    background-image:url("https://img.freepik.com/premium-vector/film-reel-strip-abstract-frame-background-design-vector-illustration-isolated-white-background_623474-470.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#restartButton{
-    font-size: 4rem;
-    border-radius: 100px;
-    background-color: rgba(28, 1, 1,0.2);
-    color: white;
-    /*margin-top: 10%;*/
-    border: 1%;
-}
-
-section{    
-    border-radius: 200px;
-    background-color: rgba(35, 6, 6, 0.877);
-    color: white;
-    margin: 1%;
-    padding: 0;
-    border: 0;
-    height: 95vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background: black;
+    color:whitesmoke;
 }
 
 div{
-   /* margin-left: 25%;
-    margin-right: 25%;*/
-    border-radius: 180px;
+    margin:50px auto;
+    width:70%;
+    height:500px;
+    background: rgb(77,8,8);
+    border-radius: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
 }
 
 p{
-    /*margin-top: 30%;*/
-    margin-bottom: 0%;
+    font-size:1.5rem;
+    margin:20px auto;
+    color:rgb(184, 184, 184);
 }
 
-@media (max-width: 1024px){
-    body{
+button{
+    width:100px;
+    height:50px;
+    border-radius: 50px;
+    background: rgb(245, 26, 26);
+    color: rgba(255, 232, 203, 0.877);
+    border:2px solid black;
+}
+
+button:hover{
+    color:white;
+    background:black;
+}
+
+@media (max-width:1024px){
+    h1{
         font-size: 5vw;
-        margin: 1%;
     }
-
-    #restartButton{
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 426px){
-    section{
-        border-radius: 0;
-    }
-
-    body{
-        background-image: url("https://www.shutterstock.com/shutterstock/videos/1038762785/thumb/1.jpg?ip=x480");
-        background-repeat: repeat;
+    
+    p{
+        width:80%;
+        font-size:3vw;
+        margin:20px auto;
+        color:rgb(184, 184, 184);
     }
 }
