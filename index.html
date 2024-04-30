@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./challenges/Challenge2/style.css">
-    <script src="https://kit.fontawesome.com/f44ce4c8a1.js" crossorigin="anonymous"></script>
-    <title>Erasmus Granada</title>
+    <title>Igenis</title>
+    <script src="https://kit.fontawesome.com/9b9a678e01.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="kezdolap.css">
+    <link rel="stylesheet" href="jatek.css">
+    <link rel="stylesheet" href="Newplayer.css">
+    <script src="filmek.js" async></script>
 </head>
-<body>
-    <header>
-        <figure>
-            <a href="index.html"><img src="./img/erasmus.jpg" alt="Erasmus+"></a>
-        </figure>
-        <ul>
-            <li><a href="./challenges/Challenge2/granada.html">Granada</a></li>
-            <li><a href="./challenges/Challenge2/alhambra.html">Alhambra</a></li>
-            <li><a href="./challenges/Challenge2/sevilla.html">Sevilla</a></li>
-            <li><a href="./challenges/Challenge2/gibraltar.html">Gibraltar</a></li>
-        </ul>
-    </header>
-    <div class="lap">
-        <h1>Erasmus+ Granada</h1>
-        <h2 style="color:black">Bolyai Farkas Elméleti Líceum</h2>
-        <h2 style="color:black">Marosvásárhely</h2>
-        <h3>2024</h3>
-        <h3>Photo Galery</h3>
 
-        <div class="about">
-            <p>About our school: </p>
-            <a href="https://hu.wikipedia.org/wiki/Bolyai_Farkas_L%C3%ADceum" class="fa-brands fa-wikipedia-w"></a>
+<body>
+    <section id="kezdoLap">
+        <div class="container"> 
+            <div class="clapperboard">
+                <img src="./img/clapperboard.png" title="clapperboard" >
+            </div>
+            
+            <div class="adatok">
+                <h1>IGENIS!</h1>
+                <h2>Can't decide what movie to watch? We can help!</h2>
+                <h3>Enter the number of players below & click start</h3>
+                <input type="number" id="playerAmount">
+                <button type="submit" id="start">START</button>
+            </div>
+            
+            <div class="popcorn">
+                <img src="./img/popcorn.png" alt="popcorn" >
+            </div>
         </div>
+    
+        <footer>
+                <h3>MADE BY:</h3>
+                <ul>
+                    <li>Fekete Krisztián</li>
+                    <li>|</li>
+                    <li>Illés Beáta-Amália</li>
+                    <li>|</li>
+                    <li>Papp Iringó</li>
+                    <li>|</li>
+                    <li>Székely Bálint</li>
+                </ul>
+        </footer>
+    </section>
+
+
+
+
+    <div id="mainLap">
+        <section>
+            <div class="valasztas">
+                <div class="wrong">
+                    <p><i class="fa-solid fa-xmark"></i></p>
+                </div>
+    
+                <div class="right">
+                    <p><i class="fa-regular fa-thumbs-up"></i></p>
+                </div>
+    
+                <div class="filmkartya">
+                    <img id="film_img" src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" alt="kep">
+                    <div class="switch"> 
+                            <h1 class="film_cim">OPPENHEIMER</h1>  
+                            <p class="year" id="year"><u>Year</u>: 2023</p>
+                            <p class="duration" id="duration"><u>Duration</u>: 112 min</p>
+                            <p class="genre" id="genre"><u>Genre</u>: Musical, Adventure, Fantasy, Comedy</p>
+                            <p class="description_cim">Description:</p>
+                            <p class="description" id="description"></p>With dreams of opening a shop in a city renowned for its chocolate, a young and poor Willy Wonka discovers that the industry is run by a cartel of greedy chocolatiers.</p>
+                            <p class="rating" id="rating"><u>Rating</u>: 3.5</p>
+                              
+                    </div>
+                </div> 
+            </div>
+        </section>
     </div>
 
-    <footer>
-        <div class="social">
-            <p>Follow our journey on facebook</p>
-            <a href="https://www.facebook.com/share/jcLjaGGQm7zGA2LS/" class="fa-brands fa-facebook"></a>
+
+    <section id="restartLap">
+        <div>
+            <p>You have finished!</p>
+            <button id="restartButton">Next player</button>
         </div>
-        <div class="form">
-            <p>If you need further information, submit your email.</p>
-            <input type="email" name="" id="" placeholder="email">
-            <button type="submit">Submit email</button>
-        </div>
-    </footer>
+    </section> 
 </body>
+
 </html>

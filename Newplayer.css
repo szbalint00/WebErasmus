@@ -1,0 +1,64 @@
+
+body{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    background-image:url("https://img.freepik.com/premium-vector/film-reel-strip-abstract-frame-background-design-vector-illustration-isolated-white-background_623474-470.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#restart{
+    font-size: 4rem;
+    border-radius: 100px;
+    background-color: rgba(28, 1, 1,0.2);
+    color: white;
+    /*margin-top: 10%;*/
+    border: 1%;
+}
+
+section{    
+    border-radius: 200px;
+    background-color: rgba(35, 6, 6, 0.877);
+    color: white;
+    margin: 1%;
+    padding: 0;
+    border: 0;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div{
+   /* margin-left: 25%;
+    margin-right: 25%;*/
+    border-radius: 180px;
+}
+
+p{
+    /*margin-top: 30%;*/
+    margin-bottom: 0%;
+}
+
+@media (max-width: 1024px){
+    body{
+        font-size: 5vw;
+        margin: 1%;
+    }
+
+    #restart{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 426px){
+    section{
+        border-radius: 0;
+    }
+
+    body{
+        background-image: url("https://www.shutterstock.com/shutterstock/videos/1038762785/thumb/1.jpg?ip=x480");
+        background-repeat: repeat;
+    }
+}
