@@ -6,6 +6,10 @@ body{
     margin:0;
 }
 
+.like{
+    width:100%;
+}
+
 section div:nth-child(1) {
     display: flex;
     justify-content: center;
@@ -132,15 +136,17 @@ div.filmkartya:hover{
 
 }
 @media (max-width:1024px){
+    .like{
+        margin:30px auto;
+    }
     body{
         background: rgb(77,8,8);
         background: radial-gradient(circle, rgba(77,8,8,1) 0%, rgba(28,1,1,0.8744747899159664) 100%);;
     }
     .right{
-        margin-top: 550px;
         margin-left: 20px;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         border-radius: 70px;
 
     }
@@ -148,9 +154,8 @@ div.filmkartya:hover{
         font-size: 30px;
     }
     .wrong{
-        margin-top: 550px;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         border-radius: 70px;
         
     }
@@ -158,16 +163,18 @@ div.filmkartya:hover{
         font-size: 30px;
     }
     .filmkartya{
+        margin-top:30px;
+        position: static;
         top:30px;
         width: 75%;
     }
     .valasztas{
         display: flex;
-        
-      
+        flex-direction: column-reverse;
     }
     .switch{
         font-size: 4vw;
+        width: 75%;
     }
     div.filmkartya:hover .switch p{
         margin: 3px;

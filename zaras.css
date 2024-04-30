@@ -30,13 +30,13 @@ header {
 }
 header h1{
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 .choice{
     width: 500px;
     height: auto;
-    overflow: hidden;
+     overflow: hidden;
     border-radius: 10px;
     outline: solid rgba(255, 232, 203, 0.877) 2px;
 }
@@ -45,9 +45,11 @@ img {
     width: 100%;
     overflow: hidden;
 }
-
+.telef{
+    display: none;
+}
 .confetti1 {
-    height: auto;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -55,12 +57,35 @@ img {
 }
 
 .confetti2 {
-    height: auto;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left    : 300px;
 }
 .confetti1, .confetti2{
-    margin-top: 300px;
+    margin-top: 270px;
+}
+@media (max-width:1024px) {
+    header h1{
+        font-size: 30px;
+        margin:30px auto;
+    }
+    .choice{
+        width: 300px;
+    }
+    .confetti1, .confetti2{
+        margin: 0;
+        margin-left: 0;
+        display: none;
+    }
+    .adatok{
+        display: flex;
+        flex-direction: column;
+    }
+    .telef{
+        display: flex;
+    }
+    
+    
 }
