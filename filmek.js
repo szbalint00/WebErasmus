@@ -13,20 +13,25 @@ const filmGenre = document.getElementById("genre");
 const filmDescription = document.getElementById("description");
 const filmRating = document.getElementById("rating");
 
+const vegeImg = document.getElementById("igenisFilm");
+
 const kezdoLap = document.getElementById("kezdoLap");
 const mainLap = document.getElementById("mainLap");
 const restartLap = document.getElementById("restartLap");
+const vegeLap = document.getElementById("vegeLap");
 
 const styles = document.querySelectorAll("link");
 
 const kezdoLapStyle=styles[0];
 const jatekStyle=styles[1];
 const restartStyle=styles[2];
+const vegeStyle=styles[3];
 
 for(let i=0;i<styles.length;i++){
     styles[i].disabled=true;
 }
 
+vegeLap.style.display="none";
 restartLap.style.display = "none";
 mainLap.style.display="none";
 kezdoLap.style.display="none";
@@ -41,30 +46,36 @@ let valaszFrek = [];
 let ok;
 
 function kezdolapVarazslo(){
+    vegeLap.style.display="none";
     restartLap.style.display = "none";
     mainLap.style.display="none";
     kezdoLap.style.display="block";
 
+    vegeStyle.disabled=true;
     jatekStyle.disabled=true;
     restartStyle.disabled=true;
     kezdoLapStyle.disabled=false;
 }
 
 function jateklapVarazslo(){
+    vegeLap.style.display="none";
     restartLap.style.display = "none";
     mainLap.style.display="block";
     kezdoLap.style.display="none";
 
+    vegeStyle.disabled=true;
     jatekStyle.disabled=false;
     restartStyle.disabled=true;
     kezdoLapStyle.disabled=true;
 }
 
 async function restartVarazslo(){
+    vegeLap.style.display="none";
     restartLap.style.display = "flex";
     mainLap.style.display="none";
     kezdoLap.style.display="none";
 
+    vegeStyle.disabled=true;
     jatekStyle.disabled=true;
     restartStyle.disabled=false;
     kezdoLapStyle.disabled=true;
@@ -227,6 +238,17 @@ function refresh(i) {
 }
 
 function kiertekeles() {
+    vegeLap.style.display="block";
+    restartLap.style.display = "none";
+    mainLap.style.display="none";
+    kezdoLap.style.display="none";
+
+    vegeStyle.disabled=false;
+    jatekStyle.disabled=true;
+    restartStyle.disabled=true;
+    kezdoLapStyle.disabled=true;
+
+    
     console.log("vege");
     maxi = 0;
     let maxiIndex = 0;
@@ -236,5 +258,6 @@ function kiertekeles() {
             maxiIndex = i;
         }
     }
+    vegeImg.setAttribute("src",filmlist[maxiIndex].image);
     console.log(filmlist[maxiIndex].title);
 }
