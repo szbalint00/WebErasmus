@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Rammetto+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&display=swap');
 
 body{
+    font-family: "Playfair Display", serif;
     text-align: center;
-    color: white;
+    color: rgba(255, 232, 203, 0.877);
     font-size: 5rem;
     background-image:url("https://img.freepik.com/premium-vector/film-reel-strip-abstract-frame-background-design-vector-illustration-isolated-white-background_623474-470.jpg");
     background-size: 100%;
@@ -9,12 +13,21 @@ body{
 }
 
 #restartButton{
-    font-size: 4rem;
-    border-radius: 100px;
-    background-color: rgba(28, 1, 1,0.2);
-    color: white;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    font-size: 3rem;
+    border-radius: 40px;
+    background-color: rgb(245, 26, 26);
+    color: rgba(255, 232, 203, 0.877);
+    font-family: "Rammetto One", sans-serif;
+    /*background-color: rgba(28, 1, 1,0.2);*/
     /*margin-top: 10%;*/
     border: 1%;
+}
+
+#restartButton:hover{
+    background-color: goldenrod;
+    color: black;
 }
 
 section{    
@@ -47,8 +60,8 @@ p{
         margin: 1%;
     }
 
-    #restart{
-        font-size: 3vw;
+    #restartButton{
+        font-size: 4vw;
     }
 }
 
@@ -60,5 +73,6 @@ p{
     body{
         background-image: url("https://www.shutterstock.com/shutterstock/videos/1038762785/thumb/1.jpg?ip=x480");
         background-repeat: repeat;
+        font-size: 20px;
     }
 }

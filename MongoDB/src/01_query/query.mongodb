@@ -1,0 +1,7 @@
+//Connect the database
+use("sample_mflix")
+
+//Use query
+db.movies.find({
+    countries: "Hungary"
+})
