@@ -1,0 +1,34 @@
+use("Pelda_Adatbazis")
+
+db.users.insertMany([
+    {
+        name:"Balint",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    },
+    {
+        name:"Balasdint",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    },
+    {
+        name:"Baasdasdlint",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    },
+    {
+        name:"Balasdasdasdint",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    },
+    {
+        name:"Baliasdasdasdasdnt",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    },
+    {
+        name:"Balasdasdadasdint",
+        age:17,
+        hobbies: ["drumming","programming","motorcycling"]
+    }]
+)

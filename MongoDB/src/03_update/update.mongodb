@@ -1,0 +1,18 @@
+use("Pelda_Adatbazis")
+
+db.users.updateOne(
+    //query the id of the user you want to change
+    {
+        _id:ObjectId('66336a6c2935c9ec6a2f6477')
+    },
+
+    {
+        $rename:{
+            name:"NEV"
+        }
+    }
+) 
+
+
+//$set modify/create property
+//$inc increment a numeric value

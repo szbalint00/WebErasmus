@@ -1,0 +1,10 @@
+//connect to database and if it doesnt exist it creats one
+use("Pelda_Adatbazis")
+
+db.users.find(
+    {
+        name:"Balint",
+        age:"17",
+        hobbies: ["drumming","programming","motorcycling"]
+    }
+)

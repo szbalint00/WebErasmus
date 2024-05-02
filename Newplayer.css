@@ -54,7 +54,7 @@ p{
     margin-bottom: 0%;
 }
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
     body{
         font-size: 5vw;
         margin: 1%;
@@ -63,16 +63,19 @@ p{
     #restartButton{
         font-size: 4vw;
     }
-}
+}*/
 
-@media (max-width: 426px){
+@media (max-width: 1100px){
     section{
         border-radius: 0;
     }
 
     body{
-        background-image: url("https://www.shutterstock.com/shutterstock/videos/1038762785/thumb/1.jpg?ip=x480");
+        background-image: url("https://scontent-bcn1-1.xx.fbcdn.net/v/t1.15752-9/440096679_403188552626998_7473013126939408446_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JPvKMSpSLX8Q7kNvgFToEQj&_nc_ht=scontent-bcn1-1.xx&oh=03_Q7cD1QHGMKy2ShUTBvMqCCGmgAb47lv3ISKxsZnGX0kAtmshUw&oe=665AD98E");
         background-repeat: repeat;
-        font-size: 20px;
+        font-size: 5vw;
+    }
+    #restartButton{
+        font-size: 4vw;
     }
 }

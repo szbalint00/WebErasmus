@@ -1,0 +1,7 @@
+use("Pelda_Adatbazis")
+
+db.users.deleteMany(
+    {
+        age:"17"
+    }
+)
