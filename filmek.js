@@ -176,7 +176,10 @@ async function start(){
 
 function startGame(){
     playerAmount = startInput.value;
-    console.log(playerAmount);
+    if(playerAmount==0){
+        location.reload()
+        console.log(playerAmount);
+    }
 }
 
 async function jatekSession() {
@@ -203,11 +206,6 @@ async function jatekSession() {
     }while (i < filmlist.length);
 }
 
-// Function to handle "jobb" button click
-
-// Function to handle "bal" button click
-
-// Function to wait for a button click using Promises
 async function waitForButtonClick() {
     return new Promise(resolve => {
         const clickHandler = () => {
