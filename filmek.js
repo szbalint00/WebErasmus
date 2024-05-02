@@ -174,11 +174,10 @@ async function start(){
     await waitForButtonClick();
 }
 
-function startGame(){
+async function startGame(){
     playerAmount = startInput.value;
-    if(playerAmount==0){
-        location.reload()
-        console.log(playerAmount);
+    if(playerAmount<=0){
+        playerAmount=1;
     }
 }
 

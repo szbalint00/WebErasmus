@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Rammetto+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Rammetto+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Indie+Flower&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rammetto+One&display=swap');
+*{
+   
+}
 body {
     /*font-family: "Indie Flower", cursive;*/
     font-family: "Playfair Display", serif;
     margin: 125px 0px 0px 0px;
     /*background: rgba(28, 1, 1, 0.877);*/
     background: rgb(77,8,8);
-background: radial-gradient(circle, rgba(77,8,8,1) 0%, rgba(28,1,1,0.8744747899159664) 100%);
+    background: radial-gradient(circle, rgba(77,8,8,1) 0%, rgba(28,1,1,0.8744747899159664) 100%);
     color:rgba(255, 232, 203, 0.877);
   }
 
@@ -40,6 +42,9 @@ div .popcorn{
 
 .adatok h1 {
     font-family: "Rammetto One", sans-serif;
+    font-size: 4.75vw;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .adatok {
@@ -61,7 +66,6 @@ button {
 button:hover {
     background: goldenrod;
     color: black;
-    /*color: rgba(255, 232, 203, 0.877);*/
 }
 
 input {
@@ -71,6 +75,7 @@ input {
     font-size: 16px;
     border-radius: 10px;
 }
+
 .adatok {
     display: flex;
     flex-direction: column;
@@ -79,15 +84,17 @@ input {
 }
 
 footer{
+    width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 footer h3{
-    font-size: 2vw;
+    font-size: 29px;
     position: relative;
+
 }
 footer ul {
     text-align: center;
@@ -95,9 +102,11 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 1.25vw;
-    width: 40%;
+    font-size: 19Px;
+    width: 70%;
     position: relative;
+    margin-top: 0;
+    align-items: center;
 }
 
 /*
