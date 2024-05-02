@@ -34,10 +34,9 @@ section{
     border-radius: 200px;
     background-color: rgba(35, 6, 6, 0.877);
     color: white;
-    margin: 1%;
     padding: 0;
     border: 0;
-    height: 95vh;
+    height: 98vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,9 +70,9 @@ p{
     }
 
     body{
-        background-image: url("https://scontent-bcn1-1.xx.fbcdn.net/v/t1.15752-9/440096679_403188552626998_7473013126939408446_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JPvKMSpSLX8Q7kNvgFToEQj&_nc_ht=scontent-bcn1-1.xx&oh=03_Q7cD1QHGMKy2ShUTBvMqCCGmgAb47lv3ISKxsZnGX0kAtmshUw&oe=665AD98E");
+        background-image: url("film.png");
         background-repeat: repeat;
-        font-size: 5vw;
+        font-size: 6vw;
     }
     #restartButton{
         font-size: 4vw;
